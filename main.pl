@@ -11,4 +11,4 @@ sub say {print @_, "\n"}
 
 $data = $ua->get("https://api.coinmarketcap.com/v1/ticker/neblio/");
 
-say JSON::XS::decode_json($data->decoded_content)->[0]->{'id'};
+my $parsed = JSON::XS::decode_json($data->decoded_content)->[0];
