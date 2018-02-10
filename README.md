@@ -2,6 +2,19 @@
 
 This is a simple Perl script that will retrieve information over Neblio.
 
+## Getting Started
+
+To get started you will first need to install Perl. After Perl is installed on a Unix machine make the main.pl executable.
+
+```
+chmod +x main.pl
+```
+Then execute
+
+```
+./main.pl
+```
+
 ## JSON Example
 
 `
