@@ -9,6 +9,6 @@ sub say {print @_, "\n"}
 $neblioConnection = new CryptoConnection("Neblio");
 
 while (1) {
-    sleep(2);
+    sleep(10);
     say strftime('%Y-%m-%d %R',localtime) . " Price USD: " . $neblioConnection->getPrice();
 }
