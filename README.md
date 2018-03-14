@@ -1,6 +1,6 @@
 # CryptoPrice
 
-This is a simple Perl script that will retrieve the price for a given crypto currency and return the price.
+This is a simple Perl script that will retrieve the price for a given crypto currency and return the price and then update you whenever the price changes.
 
 ## Getting Started
 
