@@ -8,7 +8,16 @@ sub say {print @_, "\n"}
 
 $neblioConnection = new CryptoConnection("Neblio");
 
+my $valueSincePriceChange = $neblioConnection->getPrice();
+
+say strftime('%Y-%m-%d %R',localtime) . " Price USD: " . $valueSincePriceChange;
+
 while (1) {
-    sleep(10);
-    say strftime('%Y-%m-%d %R',localtime) . " Price USD: " . $neblioConnection->getPrice();
+    my $currentValue = $neblioConnection->getPrice();
+
+    if($valueSincePriceChange != $currentValue) {
+        say strftime('%Y-%m-%d %R',localtime) . " Price USD: " . $currentValue;
+        $valueSincePriceChange = $currentValue;
+    }
+    sleep(5);
 }
