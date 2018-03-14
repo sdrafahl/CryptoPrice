@@ -25,5 +25,5 @@ while (1) {
         say strftime('%Y-%m-%d %R',localtime) . " Price USD: " . $currentValue;
         $valueSincePriceChange = $currentValue;
     }
-    sleep(5);
+    sleep(1);
 }
