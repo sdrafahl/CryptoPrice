@@ -1,6 +1,6 @@
-# Neblio Info
+# CryptoPrice
 
-This is a simple Perl script that will retrieve information over Neblio.
+This is a simple Perl script that will retrieve the price for a given crypto currency and return the price.
 
 ## Getting Started
 
