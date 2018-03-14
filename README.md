@@ -12,7 +12,13 @@ chmod +x main.pl
 Then execute
 
 ```
-./main.pl
+./main.pl <Coin Name>
+```
+
+You will need to enter a coin you would like to track. For example this command would work.
+
+```
+./main.pl Neblio
 ```
 
 ## JSON Example

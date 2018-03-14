@@ -6,7 +6,13 @@ use POSIX qw/strftime/;
 
 sub say {print @_, "\n"}
 
-$neblioConnection = new CryptoConnection("Neblio");
+my ($coinName) = @ARGV;
+
+if(not defined $coinName) {
+    die "Please Enter The Coin Name As A Argument!\n";
+}
+
+$neblioConnection = new CryptoConnection($coinName);
 
 my $valueSincePriceChange = $neblioConnection->getPrice();
 
